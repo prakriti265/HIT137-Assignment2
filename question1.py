@@ -1,15 +1,15 @@
 # Question 1 - Encryption and Decryption Program
-# HIT137-Assignment 2
+# HIT137 Assignment 2
 
 def encrypt_file(shift1, shift2):
-# Open the original file and read its content
+    # Open the original file and read its content
     with open("raw_text.txt", "r") as file:
         text = file.read()
 
     encrypted_text = ""
 
     for char in text:
-# Lowercase letters
+        # Lowercase letters
         if char.islower():
             position = ord(char) - ord('a')
 
@@ -20,7 +20,7 @@ def encrypt_file(shift1, shift2):
 
             encrypted_text += chr(new_pos + ord('a'))
 
-# Uppercase letters
+        # Uppercase letters
         elif char.isupper():
             position = ord(char) - ord('A')
 
@@ -31,17 +31,17 @@ def encrypt_file(shift1, shift2):
 
             encrypted_text += chr(new_pos + ord('A'))
 
-# Other characters stay the same
+        # Other characters stay the same
         else:
             encrypted_text += char
 
- # Write encrypted text to file
+    # Write encrypted text to file
     with open("encrypted_text.txt", "w") as file:
         file.write(encrypted_text)
 
 
 def decrypt_file(shift1, shift2):
- # Open encrypted file
+    # Open encrypted file
     with open("encrypted_text.txt", "r") as file:
         text = file.read()
 
@@ -95,4 +95,3 @@ shift2 = int(input("Enter shift2 value: "))
 encrypt_file(shift1, shift2)
 decrypt_file(shift1, shift2)
 verify_decryption()
-
