@@ -1,0 +1,5 @@
+Year: group
+Average Temperature: 31.50
+Maximum Temperature: 44.74
+Minimum Temperature: 17.61
+

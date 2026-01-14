@@ -1,0 +1,4 @@
+Overall Temperature Statistics
+Average Temperature: 31.47
+Maximum Temperature: 46.43
+Minimum Temperature: 16.90
