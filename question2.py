@@ -1,4 +1,5 @@
 import os
+
 import csv
 
 yearly_temperatures = {}
@@ -47,4 +48,5 @@ with open("overall_temperature_stats.txt", "w") as file:
     file.write(f"Average Temperature: {overall_average:.2f}\n")
     file.write(f"Maximum Temperature: {overall_max:.2f}\n")
     file.write(f"Minimum Temperature: {overall_min:.2f}\n")
+
 
